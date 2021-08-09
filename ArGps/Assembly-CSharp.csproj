@@ -60,12 +60,16 @@
     <Compile Include="Assets\ARLocation\Scripts\Components\PlaceAtLocations.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\DVector2.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\MathUtils.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\SpeechBubbleBase.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\ARLocationOrientation.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\RatioLayoutFitter.cs" />
+    <Compile Include="Assets\Test\TalkingCube.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\Logger.cs" />
     <Compile Include="Assets\ARLocation\Experimental\World Builder\WorldBuilderApplicationController.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\SmoothMove.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\ConditionalPropertyAttribute.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Location\AndroidMagneticDeclination.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\Demos\UISpeechController.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\Hotspot.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\GroundHeight.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\MoveAlongPath.cs" />
@@ -74,13 +78,16 @@
     <Compile Include="Assets\ARLocation\Scripts\Utils\ShowHideSelfOnPointerClick.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\PlaceAlongPath.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\Singleton.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\Demos\ScriptedDialogueBehaviour.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Location\UnityLocationProvider.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\SpeechBubbleTmp.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\Line.cs" />
     <Compile Include="Assets\ARLocation\Scripts\ScriptableObjects\LocationPath.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\MovingAveragePosition.cs" />
     <Compile Include="Assets\ARLocation\Experimental\World Voxel Craft\WorldVoxelController.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\Misc.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\DVector3.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\Demos\SayRandomThingsBehaviour.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Location\AndroidNativeCompass.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\LinearSpline.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Location\ILocationProvider.cs" />
@@ -89,6 +96,7 @@
     <Compile Include="Assets\ARLocation\Scripts\Components\UI\ARTrackingInfo.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\WebMapEditor\WebMapLoader.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\FollowCameraPosition.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\Demos\2d scene\RandomMovementBehaviour.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\FaceCamera.cs" />
     <Compile Include="Assets\ARLocation\Scripts\ScriptableObjects\PrefabDatabase.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\CreatePointOfInterestTextMeshes.cs" />
@@ -113,12 +121,16 @@
     <Compile Include="Assets\ARLocation\Scripts\Utils\FadeOutTextMesh.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\UI\DebugDistance.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\RenderPathLine.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\SpeechBubbleManager.cs" />
     <Compile Include="Assets\ARLocation\Scripts\ARLocation.cs" />
+    <Compile Include="Assets\Viking Crew Tools\Camera controls\MouseOrbitImproved.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\PlaceAtLocation.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Utils\SelectScene.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Math\Spline.cs" />
+    <Compile Include="Assets\Viking Crew Tools\UI\SpeechBubbleManager\SpeechBubbleBehaviour.cs" />
     <Compile Include="Assets\ARLocation\Scripts\Components\UI\DebugInfoOverlay.cs" />
     <Compile Include="Assets\ARLocation\Experimental\World Builder\WorldBuilder.cs" />
+    <Compile Include="Assets\ARLocation\Scripts\Components\TestObjects.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\ARLocation\Samples\Data\pois.xml" />

@@ -5,9 +5,9 @@ ScriptsOnlyBuild:
     - ARLocation.ARLocationManager
     - ARLocation.ARLocationOrientation
     - ARLocation.ARLocationProvider
-    - ARLocation.Hotspot
     - ARLocation.LocationData
     - ARLocation.PlaceAtLocation
+    - ARLocation.TestObjects
     - ARLocation.UI.ARTrackingInfo
     - ARLocation.UI.DebugInfoOverlay
     - ARLocation.UI.LoadingBar
@@ -16,6 +16,9 @@ ScriptsOnlyBuild:
     - ARLocation.Utils.DevCameraController
     - ARLocation.Utils.FollowCameraPosition
     - ARLocation.Utils.RotateObject
+    - VikingCrew.Tools.UI.RatioLayoutFitter
+    - VikingCrew.Tools.UI.SpeechBubbleBehaviour
+    - VikingCrew.Tools.UI.SpeechBubbleManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARCore.Editor.dll:
@@ -47,11 +50,13 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/ARLocation/Samples/TestSceneObjects.unity:
+    Assets/ARLocation/Samples/UniqueScriptScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -74,6 +79,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 102
@@ -89,61 +96,71 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1656}
+      Script: {instanceID: 1658}
     - Class: 114
-      Script: {instanceID: 2054}
+      Script: {instanceID: 1708}
     - Class: 114
-      Script: {instanceID: 2110}
+      Script: {instanceID: 1786}
     - Class: 114
-      Script: {instanceID: 2472}
+      Script: {instanceID: 1936}
     - Class: 114
-      Script: {instanceID: 2500}
+      Script: {instanceID: 2122}
     - Class: 114
-      Script: {instanceID: 2584}
+      Script: {instanceID: 2486}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2514}
     - Class: 114
-      Script: {instanceID: 3014}
+      Script: {instanceID: 2598}
     - Class: 114
-      Script: {instanceID: 3124}
+      Script: {instanceID: 2808}
     - Class: 114
-      Script: {instanceID: 3198}
+      Script: {instanceID: 3032}
     - Class: 114
-      Script: {instanceID: 3236}
+      Script: {instanceID: 3142}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3216}
     - Class: 114
-      Script: {instanceID: 3320}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3480}
+      Script: {instanceID: 3336}
+    - Class: 114
+      Script: {instanceID: 3338}
+    - Class: 114
+      Script: {instanceID: 3342}
     - Class: 114
       Script: {instanceID: 3500}
     - Class: 114
-      Script: {instanceID: 3724}
+      Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 3740}
+      Script: {instanceID: 3744}
     - Class: 114
-      Script: {instanceID: 3772}
+      Script: {instanceID: 3760}
     - Class: 114
-      Script: {instanceID: 3782}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 3924}
+      Script: {instanceID: 3802}
     - Class: 114
-      Script: {instanceID: 3934}
+      Script: {instanceID: 3944}
     - Class: 114
-      Script: {instanceID: 3942}
+      Script: {instanceID: 3954}
     - Class: 114
-      Script: {instanceID: 3972}
+      Script: {instanceID: 3962}
     - Class: 114
-      Script: {instanceID: 4078}
+      Script: {instanceID: 3992}
     - Class: 114
-      Script: {instanceID: 4350}
+      Script: {instanceID: 4098}
     - Class: 114
-      Script: {instanceID: 4588}
+      Script: {instanceID: 4370}
     - Class: 114
-      Script: {instanceID: 4802}
+      Script: {instanceID: 4574}
     - Class: 114
-      Script: {instanceID: 5000}
+      Script: {instanceID: 4610}
+    - Class: 114
+      Script: {instanceID: 4826}
+    - Class: 114
+      Script: {instanceID: 5016}
+    - Class: 114
+      Script: {instanceID: 5026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -151,6 +168,8 @@ ScriptsOnlyBuild:
     - Class: 124
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -277,6 +296,18 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
+      Hash: 69f3249190165a4b697250f2bb11c5af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrew.Tools.UI
+    className: RatioLayoutFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TalkingCube
+  - hash:
+      serializedVersion: 2
       Hash: 58f4a880039ca30d5c3607678ba696aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: ARLocation
@@ -289,10 +320,22 @@ ScriptsOnlyBuild:
     className: ARPointCloudMeshVisualizer
   - hash:
       serializedVersion: 2
+      Hash: 85453767f0744d0da071088b808dbb17
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: ARLocation
+    className: TestObjects
+  - hash:
+      serializedVersion: 2
       Hash: d4f1ef5e80f8dfcddd7839dd8e92281e
     assemblyName: Assembly-CSharp.dll
     namespaceName: ARLocation.Utils
     className: SmoothMove
+  - hash:
+      serializedVersion: 2
+      Hash: 21ee473110b7854f1eb35f3e38e86511
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrewDevelopment.Demos
+    className: UISpeechController
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -373,6 +416,12 @@ ScriptsOnlyBuild:
     className: EnumerableTestState
   - hash:
       serializedVersion: 2
+      Hash: 0ddd4e001be9cc1d18cd5ed3677fac3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrew.Tools.UI
+    className: ScriptedDialogueBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -401,6 +450,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 81eec6f9c9e82030122c833535c1a985
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrew.Tools.UI
+    className: SpeechBubbleTmp
   - hash:
       serializedVersion: 2
       Hash: 290afc8da8e459e0b8dc7444bfaf5e35
@@ -485,6 +540,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 8c56338ac852d5815852f016c0fa99e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrewDevelopment.Demos
+    className: SayRandomThingsBehaviour
   - hash:
       serializedVersion: 2
       Hash: 1268406d3f2e4b2c2b670b560b6db769
@@ -605,6 +666,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARAnchorManager
+  - hash:
+      serializedVersion: 2
+      Hash: e112008065d98839ba2022f8e0aacd8b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrewDevelopment
+    className: RandomMovementBehaviour
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -961,6 +1028,12 @@ ScriptsOnlyBuild:
     className: ARParticipant
   - hash:
       serializedVersion: 2
+      Hash: ca4a5f7847abe32593e1a8ab92b14637
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrew.Tools.UI
+    className: SpeechBubbleManager
+  - hash:
+      serializedVersion: 2
       Hash: fd68d84f33fad85aac38f2739c0ee270
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -989,6 +1062,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARFaceManager
+  - hash:
+      serializedVersion: 2
+      Hash: 0aa8a2db7bfe7a7606f668306f5a72dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrewTools
+    className: MouseOrbitImproved
   - hash:
       serializedVersion: 2
       Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
@@ -1045,6 +1124,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 2c3c2aeea94282a3817286ebfbd2fe12
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: VikingCrew.Tools.UI
+    className: SpeechBubbleBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: abf1930d8126d0b2e00e9449129a0190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1063,5 +1148,5 @@ ScriptsOnlyBuild:
     className: WorldBuilder
   platform: 13
   scenePathNames:
-  - Assets/ARLocation/Samples/TestSceneObjects.unity
+  - Assets/ARLocation/Samples/UniqueScriptScene.unity
   playerPath: C:/Users/hecti/Documents/UnityProjects/ArGps/ArGpsApk.apk

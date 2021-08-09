@@ -204,6 +204,9 @@ namespace ARLocation {
             Logger.LogFromMethod("Hotspot", "ActivateHotspot", $"({name}): Hotspot activated", DebugMode);
 
             OnHotspotActivated?.Invoke(state.Instance);
+
+            //BOCADILLO
+            VikingCrew.Tools.UI.SpeechBubbleManager.Instance.AddSpeechBubble(transform, "Hello world!");
         }
 
         // ReSharper disable once UnusedMethodReturnValue.Global
